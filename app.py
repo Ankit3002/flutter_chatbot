@@ -12,7 +12,8 @@ app = Flask(__name__)
 
 def response():
     value = "wwe"
-    return jsonify({"response":value})
+    something = "this is awsome"
+    return jsonify({"response":value , "else": something})
 
 
 if __name__ == '__main__':
