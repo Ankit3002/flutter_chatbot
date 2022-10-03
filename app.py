@@ -11,9 +11,8 @@ app = Flask(__name__)
 
 
 def response():
-    query = dict(request.form)['query']
-    result = query + " "+time.ctime()
-    return jsonify({"response":result})
+    value = "wwe"
+    return jsonify({"response":value})
 
 
 if __name__ == '__main__':
