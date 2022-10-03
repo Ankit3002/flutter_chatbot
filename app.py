@@ -1,3 +1,4 @@
+
 from flask import Flask , jsonify , request
 import time
 
@@ -6,10 +7,7 @@ from sqlalchemy import JSON
 
 app = Flask(__name__)
 
-@app.route("/bot" , method = ["POST"])
-
-
-
+@app.route("/bot" , methods = ["GET"])
 def response():
     value = "wwe"
     something = "this is awsome"
@@ -17,4 +15,4 @@ def response():
 
 
 if __name__ == '__main__':
-    app.run(host = "0.0.0.0",)
+    app.run(debug=True)
